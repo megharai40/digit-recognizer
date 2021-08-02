@@ -1,6 +1,6 @@
 numpy
 matplotlib
-tensorflow
+tensorflow-cpu
 runipy
 opencv-python
 streamlit==0.64.0
