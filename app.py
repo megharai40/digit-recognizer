@@ -6,11 +6,11 @@ import tensorflow as tf
 from keras.models import load_model
 import cv2
 
-MODEL_DIR = os.path.join(os.path.dirname(__file__), 'digit recognizer')
+MODEL_DIR = os.path.join(os.path.dirname(__file__), 'model')
 if not os.path.isdir(MODEL_DIR):
-    os.system('runipy train.py')
+    os.system('runipy train.ipynb')
 
-model = load_model('digit recognizer') 
+model = load_model('model')
 
 canvas_result = st_canvas(
     stroke_width=10,
