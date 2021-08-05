@@ -1,3 +1,4 @@
+import os
 import streamlit as st
 from streamlit_drawable_canvas import st_canvas
 import numpy as np
@@ -5,7 +6,11 @@ import tensorflow as tf
 from keras.models import load_model
 import cv2
 
-model = load_model('digit recognizer.h5') 
+MODEL_DIR = os.path.join(os.path.dirname(__file__), 'digit recognizer')
+if not os.path.isdir(MODEL_DIR):
+    os.system('runipy train.py')
+
+model = load_model('digit recognizer') 
 
 canvas_result = st_canvas(
     stroke_width=10,
