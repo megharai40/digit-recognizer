@@ -1,14 +1,10 @@
-import os
+
 import streamlit as st
 from streamlit_drawable_canvas import st_canvas
 import numpy as np
 import tensorflow as tf
 from keras.models import load_model
 import cv2
-
-MODEL_DIR = os.path.join(os.path.dirname(__file__), 'model')
-if not os.path.isdir(MODEL_DIR):
-    os.system('runipy train.ipynb')
 
 model = load_model('model')
 
