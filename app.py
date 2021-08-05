@@ -6,7 +6,7 @@ import tensorflow as tf
 from keras.models import load_model
 import cv2
 
-model = load_model('model')
+model = load_model('digit recognizer.h5')
 
 canvas_result = st_canvas(
     stroke_width=10,
