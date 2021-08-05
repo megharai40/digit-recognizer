@@ -29,4 +29,4 @@ model.compile(loss='SparseCategoricalCrossentropy',optimizer='adam',metrics=['ac
 
 model.fit(x_train,y_train,epochs=10)
 
-model.save('digit recognizer.h5')
+model.save('digit recognizer')
