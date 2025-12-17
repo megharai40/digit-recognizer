@@ -1,7 +1,6 @@
 numpy==1.19.2
 matplotlib
 tensorflow-cpu
-runipy
 opencv-python-headless
 streamlit
 streamlit-drawable-canvas
