@@ -3,7 +3,7 @@ import streamlit as st
 from streamlit_drawable_canvas import st_canvas
 import numpy as np
 import tensorflow as tf
-from keras.models import load_model
+from tensorflow.keras.models import load_model
 import cv2
 
 model = load_model('digit recognizer.h5')
